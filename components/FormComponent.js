@@ -29,7 +29,7 @@ const FormComponent = () => {
     setLoading(true)
     var response = await axios({
       method:'post',
-      url:'http://localhost:3000/api/alo',
+      url:`${process.env.API_URL}/api/alo`,
       data:{
         pages:values.pages,
         type:values.type,
