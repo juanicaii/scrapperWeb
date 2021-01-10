@@ -1,4 +1,8 @@
-var cloudscraper = require("cloudscraper");
+var cloudscraper = require('cloudscraper').defaults({
+  agentOptions: {
+    ciphers: 'ECDHE-ECDSA-AES128-GCM-SHA256'
+  }
+})
 const cheerio = require("cheerio");
 const scrape = require("scrape-it");
 
