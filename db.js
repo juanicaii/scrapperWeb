@@ -6,7 +6,8 @@ const db = new Sequelize("zzznpulj_juaniboludeo", "zzznpulj_soporte_bd", "SMT4dm
   host: "167.250.5.8",
   dialect: "mysql",
   database:"zzznpulj_juaniboludeo",
-  dialect:"mysql"
+  dialect:"mysql",
+  dialectModule: require('mysql2')
 });
 
 
